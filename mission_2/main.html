@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Signup Page</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+  </head>
+  <body>
+    <div class="signup-container">
+      <h2>sign up</h2>
+      
+      <form action="/submit_signup" method="post">
+        <!-- NAME -->
+        <div class="input-group">
+          <label for="username">username:</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+          />
+          <div class="error" id="usernameError">*</div>
+        </div>
+
+        <!-- NICK NAME -->
+        <div class="input-group">
+          <label for="nickname">Nick name:</label>
+          <input
+            type="text"
+            id="nickname"
+            name="nickname"
+          />
+          <div class="error" id="nicknameError">*</div>
+        </div>
+
+        <!-- E-MAIL -->
+        <div class="input-group">
+          <label for="email">E-mail:</label>
+          <input
+            type="text"
+            id="email"
+            name="email"
+          />
+          <div class="error" id="emailError">*</div>
+        </div>
+
+        <!-- Password -->
+        <div class="input-group">
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            type="password"
+          />
+          <div class="error" id="passwordError">*</div>
+        </div>
+
+        <!-- Check Password -->
+        <div class="input-group">
+          <label for="checkpassword">Check Password:</label>
+          <input
+            type="password"
+            id="checkpassword"
+            name="checkpassword"
+            type="password"
+          />
+          <div class="error" id="checkpasswordError">*</div>
+        </div>
+        
+        <!--  -->
+        <button type="submit" id="open">가입하기</button>
+      </form> 
+    </div>
+    <div class="modal-wrapper" style="display: none;">
+      <div class="modal">
+        <div class="modal-title">가입성공!</div>
+        <p>UMC 챌린저 가입을 축하드립니다!!</p>
+        <div class="close-wrapper">
+          <button id="close">닫기</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="main.js"></script> 
+</html>

@@ -1,0 +1,94 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("background.svg"); /* Add this line */
+  background-size: cover; /* Add this line */
+}
+
+.signup-container {
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 300px;
+  padding: 16px;
+  background-color: rgba(255, 255, 255, 0.6); /* Change this line */
+  margin: 0 auto; /* Center the form */
+  margin-top: 100px; /* Add some top margin for visual purpose */
+  color: #fcfcfc;
+}
+
+.input-group label {
+  margin-top: 1px;
+  display: block;
+  
+}
+
+.input-group input {
+  width: 90%;
+  padding: 10px;
+  color: #fcfcfc;
+  background-color: rgba(241, 241, 241, 0.2); /* Change this line */
+}
+input::placeholder {
+  color: rgb(0, 0, 0);
+}
+.error {
+  color: rgb(0, 0, 0);
+}
+button {
+  width: 95%;
+  margin-top: 10px;
+  margin-left: 5px;
+  padding: 10px;
+  background-color: rgba(241, 241, 241, 0.6); /* Change this line */
+  color: black;
+}
+
+.error-active {
+  color: red;
+}
+.correct-active {
+  color: rgb(32, 161, 32);
+}
+.modal-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  background: white;
+  padding: 24px 16px;
+  border-radius: 4px;
+  width: 320px;
+}
+
+.modal-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.modal p {
+  font-size: 16px;
+}
+
+.close-wrapper {
+  text-align: right;
+  bottom: 10px; /* Add this line */
+  right: 10px; /* Add this line */
+  font-size: 10px; 
+}
+
+.close-wrapper button {
+  width: 50px; /* Set the width of the button */
+  height: 40px; /* Set the height of the button */
+}

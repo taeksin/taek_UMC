@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("background.svg"); /* Add this line */
+  background-size: cover; /* Add this line */
+}
+
+.login-container {
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 300px;
+  padding: 16px;
+  background-color: rgba(241, 241, 241, 0.2); /* Change this line */
+  margin: 0 auto; /* Center the form */
+  margin-top: 100px; /* Add some top margin for visual purpose */
+  color: #fcfcfc;
+}
+
+.input-group label {
+  margin-top: 10px;
+  display: block;
+  
+}
+
+.input-group input {
+  width: 90%;
+  padding: 10px;
+  color: #fcfcfc;
+  background-color: rgba(241, 241, 241, 0.2); /* Change this line */
+}
+input::placeholder {
+  color: rgb(223, 213, 213);
+}
+button {
+  width: 95%;
+  margin-top: 10px;
+  margin-left: 5px;
+  padding: 10px;
+  background-color: #fcfcfc;
+  color: black;
+}
