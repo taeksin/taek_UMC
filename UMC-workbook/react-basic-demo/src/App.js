@@ -1,5 +1,5 @@
 import { movies } from './movieDummy';
-import Movie from './components/Movie';
+import Movie from './components/Movie/Movie';
 
 function App() {
   return (
@@ -11,6 +11,7 @@ function App() {
               title={item.title}
               poster_path={item.poster_path}
               vote_average={item.vote_average}
+              overview={item.overview}
             />
           );
         })}
